@@ -1,6 +1,5 @@
 class Solution:
     def hammingWeight(self, n: int) -> int:
-        res = 0
         count = 0
         while n != 0:
             if n % 2 == 1:
