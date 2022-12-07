@@ -13,3 +13,5 @@ class Solution:
             except KeyError:
                 continue
         return res 
+    # Time: O(m)
+    # Space: O(n)
