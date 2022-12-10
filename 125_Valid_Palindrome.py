@@ -1,4 +1,4 @@
-import re
+# Pointers
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         import re
@@ -17,3 +17,11 @@ class Solution:
             left += 1
             right -= 1
         return True
+
+# No extra memory allocated
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = s.lower()
+        s = re.sub('[^0-9a-zA-Z]+', '', s)
+        s = s.replace(" ", "")
+        return s == s[::-1]
